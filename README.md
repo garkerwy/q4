@@ -1,2 +1,2 @@
 # q4
-Country per last letter game
+Country per Last Letter game
