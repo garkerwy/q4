@@ -1,5 +1,5 @@
 # q4
-Country per Last Letter game
+Country by Last Letter game
 countries = ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 
             'Armenia', 'Australia', 'Austria', 'Azerbaijan', 'Baden', ' The Bahamas', 
             'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bolivia', 'Bosnia and Herzegovina',
@@ -26,5 +26,14 @@ countries = ['Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua 
             'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan', 'Vanuatu', 
             'Vatican City', 'Venezuela', 'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe']
 def
-play_country_per_last_letter_game():
-    print("Welcome to the Country per Last Letter game!")
+play_country_by_last_letter_game():
+    print("Welcome to the Country by Last Letter game!")
+    print("Enter a country name. THe next country must start with the last letter of the previous country.")
+    print("Let's start!")
+
+    current_country = countries[0]    
+    print("Current country:"+ current_country)
+    
+    if true:
+      player_input = input("Enter a country:").capitalize()
+      
