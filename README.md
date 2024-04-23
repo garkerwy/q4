@@ -36,4 +36,67 @@ play_country_by_last_letter_game():
     
     if true:
       player_input = input("Enter a country:").capitalize()
+
+
+
+
+
+      def get_country_by_last_letter(last_letter):
+
+    valid_countries = [country for country in countries if country[0].lower() == last_letter]
+
+    return 
+random.choice(valid_countries) if valid_countries else None
+
+
+
+def main():
+
+    print("Welcome to the Country by Last Letter game!")
+    print("I'll start by naming a country, and then you should name a country starting with the last letter of the country I named.")
+    print("Let's begin!")
+
+    country = random.choice(countries)
+
+    
+
+    while True:
+
+        print("Computer:", country)
+
+        time.sleep(20)  # 20 seconds to think
+
+        last_letter = country[-1].lower()
+
+        player_country = input("Your turn: ").strip()
+
+
+
+        if player_country.lower() == 'exit':
+
+            print("Thanks for playing!")
+
+            break
+
+
+
+        if player_country.lower() != '' and player_country[0].lower() == last_letter:
+
+            country = get_country_by_last_letter(player_country[-1].lower())
+
+            if country is None:
+
+                print("No country found with that letter. You win!")
+
+                break
+
+        else:
+
+            print("Oops! Please enter a valid country starting with the letter '{}'.".format(last_letter))
+
+
+
+if __name__ == "__main__":
+
+    main()
       
