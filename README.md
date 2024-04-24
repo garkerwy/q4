@@ -80,23 +80,4 @@ def main():
 
 
 
-        if player_country.lower() != '' and player_country[0].lower() == last_letter:
-
-            country = get_country_by_last_letter(player_country[-1].lower())
-
-            if country is None:
-
-                print("No country found with that letter. You win!")
-
-                break
-
-        else:
-
-            print("Oops! Please enter a valid country starting with the letter '{}'.".format(last_letter))
-
-
-
-if __name__ == "__main__":
-
-    main()
-      
+     
