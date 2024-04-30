@@ -126,7 +126,34 @@ If with only you: game should randomly chose who starts first giving a country a
 (After attempts are used the game should say (Game over, you lost!))
 (To win the game each person should name 7 right answers, game should say (Game over, you win!))
 
+       
+          
+          
+          
+          
+         **(corrections)        
+           Brainstorming #2
+          (improved version)
+1)Game gives a random country.
+2)I answer that by giving a country name that starts with the last letter of the country that game gave me.
+3)My answer’s last letter is the beginning of the country’s name that now game should answer.
 
+******************************************
+(Game should ask: Do you want to play only with me, or with two and more people?
+If with 2 or more then game should ask for names and then randomly say who starts first, who starts second(depending how many people is playing)
+Then chosen person should name any country and after, each person should name a country that starts with the last letter of previous country
+If with only you: game should randomly chose who starts first giving a country and then just play as I wrote)
+
+(Time given in between is 20 seconds)
+(Same countries cannot be used)
+(Each person have 3 attempts for wrong answer)
+(After attempts are used the game should say (Game over, you lost!))
+(To win the game each person should name 7 right answers, game should say (Game over, you win!))
+(Game cannot accept as an answer the same country as it was given.)
+(Should not give:
+Correct, good job!
+Time's up! You lost!)
+(If time is up then only:Time's up! You lost!)
     
    
 
