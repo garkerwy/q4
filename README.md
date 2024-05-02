@@ -155,7 +155,17 @@ Correct, good job!
 Time's up! You lost!)
 (If time is up then only:Time's up! You lost!)
     
-   
+
+
+(comments about current work and what needs to be changed:)
+Code that I wrote above needs to be improved because if you give the same answer as the game gave to you, it counts for the correct answer.
+Also only the game is asking for a country but not answering, which needs to be corrected. 
+Game is not asking for how many people will play, it needs to be corrected.
+Also I need to think about ways to fair this game if someone plays with a computer, (cause computer will anyways).
+Add code for attempts that each person can have(3).
+Add code to make a win for the person who named 7 right answers.
+
+
 
 
      
