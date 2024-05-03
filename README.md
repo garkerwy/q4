@@ -166,6 +166,12 @@ Add code for attempts that each person can have(3).
 Add code to make a win for the person who named 7 right answers.
 
 
+MAYBE:
+Add not only countries, but also cities
+First ask : Do you want to play a country game or city game?
+(try to create those codes, if it too complicated then there is no need to change game)
+
+
 
 
      
