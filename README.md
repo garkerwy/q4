@@ -173,6 +173,6 @@ First ask : Do you want to play a country game or city game?
 
 
 
-Making a presentation to explain my project.
+Making a presentation to explain my project.(x2)
 
      
