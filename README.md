@@ -171,8 +171,4 @@ Add not only countries, but also cities
 First ask : Do you want to play a country game or city game?
 (try to create those codes, if it too complicated then there is no need to change game)
 
-
-
-Making a presentation to explain my project.
-worked on the presentation 
      
