@@ -1,6 +1,6 @@
 # q4
 
-Country by last letter game
+Country By Last Letter game
 
 
 import random
