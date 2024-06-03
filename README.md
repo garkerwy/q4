@@ -29,9 +29,9 @@ def get_player_input(prompt, timeout=20):
 
     while time.time() - start_time < timeout:
 
-            user_input = input()
+        user_input = input()
 
-            break
+        break
 
     end_time = time.time()
 
@@ -53,7 +53,7 @@ def play_solo_game(countries):
 
     print("You will play against the computer. I'll start by naming a country, and you have 20 seconds to name a country starting with the last letter of mine.")
 
-    
+
 
     used_countries = set()
 
@@ -69,13 +69,11 @@ def play_solo_game(countries):
 
     used_countries.add(current_country)
 
-
+    
 
     while player_attempts > 0:
 
         last_letter = current_country[-1].lower()
-
-
 
         user_input = get_player_input(f"Your country (starts with '{last_letter}'): ", 20)
 
@@ -115,8 +113,6 @@ def play_solo_game(countries):
 
             correct_answers += 1
 
-            current_country = user_input
-
             if correct_answers >= 7:
 
                 print("Game over, you win!")
@@ -125,11 +121,35 @@ def play_solo_game(countries):
 
 
 
-        if player_attempts == 0:
+        # Computer's turn
 
-            print("Game over, you lost!")
+        last_letter = user_input[-1].lower()
+
+        valid_countries = [country for country in countries if country.lower().startswith(last_letter) and country.lower() not in used_countries]
+
+        if not valid_countries:
+
+            print("No valid country found for the computer. You win!")
 
             return
+
+        computer_country = random.choice(valid_countries)
+
+        print("Computer's country:", computer_country)
+
+        used_countries.add(computer_country.lower())
+
+
+
+        current_country = computer_country
+
+
+
+    if player_attempts == 0:
+
+        print("Game over, you lost!")
+
+        return
 
 
 
@@ -298,7 +318,10 @@ def main():
 
 
     print("Welcome to Country By Last Letter game!")
+
     print( "Do you want to play solo or with multiple players?")
+
+
 
     mode = input("Type 'solo' for solo mode or 'multi' for multiplayer mode: ").strip().lower()
 
@@ -313,6 +336,8 @@ def main():
         play_multiplayer_game(countries)
 
     else:
+
+
 
         print("Invalid option. Please restart the game and choose a valid mode.")
 
