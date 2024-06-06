@@ -1,8 +1,3 @@
-# q4
-
-Country By Last Letter game
-
-
 import random
 
 import time
